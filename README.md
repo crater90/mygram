@@ -1,6 +1,9 @@
 # MyGram Instagram build 2.0
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/k6hf6xn7tnjpd4fztqi5.png)
+![Login screen](public/screen01.jpg)
+![Home screen](public/screen02.jpg)
+![Modal screen](public/screen03.jpg)
+
 
 Demo: https://lift-next.vercel.app
 
