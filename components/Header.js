@@ -6,6 +6,7 @@ import {
     HeartIcon,
     PaperAirplaneIcon,
     MenuIcon,
+    UserIcon, 
 } from '@heroicons/react/outline';
 import { HomeIcon } from '@heroicons/react/solid';
 import { signIn, signOut, useSession } from "next-auth/react";
@@ -23,7 +24,7 @@ function Header() {
                 {/* left */}
                 <div onClick={() => router.push("/")} className="relative h-10 hidden lg:inline-grid w-24 cursor-pointer">
                     <Image
-                      src= "https://links.papareact.com/ocw"
+                      src= "/logo.webp"
                       layout="fill"
                       objectFit="contain"
                     />
@@ -61,7 +62,7 @@ function Header() {
                         <img onClick={signOut} className="h-10 rounded-full cursor-pointer" src={session?.user?.image} alt="profile pic" />
                         </>
                     ) : (
-                        <button onClick={signIn} className="">Sign In</button>
+                        <UserIcon onClick={signIn} className="h-6 hover:scale-125 cursor-pointer transition-all duration-150 ease-out"/>
                     )}            
                 </div>           
             </div>
